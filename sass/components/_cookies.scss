@@ -1,0 +1,32 @@
+#cookie-consent {
+  background-color: $cookies-color;
+  color: #ecf0f1;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  p {
+    margin: 0;
+  }
+  a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  .cookies-button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    button {
+      @extend btn-sm;
+    }
+  }
+}

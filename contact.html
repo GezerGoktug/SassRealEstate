@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate-Contact</title>
+    <link rel="icon" href="./image/favicon/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" /> 
+       <!--! Animate Css Library Added  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+        <!--! RETURN THE TOP BUTTON SECTİON START  -->
+        <div class="returntop"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></div>
+        <!--! RETURN THE TOP BUTTON SECTİON STOP  -->
+    <!--! SCREEN LEFT SOCİAL MEDİA İCONS START -->
+    <div class="screen-left-contact">
+        <div class="contact-links">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+      <!--! SCREEN LEFT SOCİAL MEDİA İCONS STOP -->
+      <!--! SCREEN RİGHT SOCİAL MEDİA İCONS START -->
+      <div class="screen-right-contact-icon">
+        <i class="fa-brands fa-whatsapp"></i><span class="badge">1</span>
+      </div>
+      <!--! SCREEN RİGHT SOCİAL MEDİA İCONS STOP -->
+      <header>
+        <!--! NAVBAR START  -->
+    <div class="navbar animate__animated animate__fadeInDownBig">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="home.html"><i class="fa-solid fa-house"></i>RealEstate</a>
+          </div>
+          <nav>
+            <ul>
+              <li><a  href="home.html">Home</a></li>
+              <li><a  href="pricing.html">Pricing Home</a></li>
+              <li><a class="active" href="contact.html">Contact</a></li>
+              <li class="toggle-bar"><i onclick="togglebarShow()" class="fa-solid fa-bars"></i></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="toggle-navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="pricing.html">Pricing Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!--! NAVBAR STOP  -->
+    </header>
+    <!--! REGİSTER FORM START  -->
+    <form class="register"  id="top">
+        <h2>Register</h2>
+              <label for="">Name:</label>
+      <input placeholder="Enter your name" required type="text">
+      <label for="">Surname:</label>
+      <input placeholder="Enter your surname" required type="text">
+      <label for="">Age:</label>
+      <input placeholder="Enter your age" required type="number" min="18">
+      <label for="">Birthday:</label>
+      <input placeholder="Enter your birthday" required type="date">
+      <label for="">Email:</label>
+      <input placeholder="Enter your email" required type="email">
+      <label for="">Password:</label>
+      <input placeholder="Enter your password" required type="password">
+              <button type="submit">Kayıt Ol</button>
+    </form>
+    <!--! REGİSTER FORM STOP  -->
+    <!--! CONTACT FORM START  -->
+<form id="top" class="contact-form">
+    <div class="contact">
+        <h2>Contact Form</h2>
+        <div class="contact-personal">
+            <div class="contact-personal-info">
+                <label for="">Name:   </label><input placeholder="Enter your name" class="contact-name" required type="text">
+                <label for="">Surname:</label><input placeholder="Enter your surname" class="contact-surname" required type="text">
+                <label for="">Email:  </label><input placeholder="Enter your email" class="contact-email" required type="email">
+            </div>
+            <div class="contact-personal-location">
+               <label for="">Location:</label> <select required name="" id="">
+                <option  value="">Select Cities</option>
+                <option value="">Ankara</option>
+                <option value="">Antalya</option>
+                <option value="">İstanbul</option>
+                <option value="">İzmir</option>
+                <option value="">Trabzon</option>
+                <option value="">Muğla</option>
+                <option value="">Others</option>
+               </select>
+               <label  for="">Subject About:</label> <input required placeholder="What's the problem about" class="contact-subject" type="text">
+              <label for="">Have you used us before?:</label><div class="contact-radio-button"> Yes:<input type="radio" name="contact" id="contact-radio">No:<input type="radio" name="contact"id="contact-radio"></div>
+            </div>
+        </div>
+        <h4>Write the problem:</h4>
+        <textarea placeholder="Please write your problem here" name="" id="comment" cols="30" rows="10"></textarea>
+        <button class="contact-send">Send</button>
+    </div>
+<h2>Our Communication Adress</h2>
+<div class="contact-social-media">
+    <ul>
+        <li><i class="fa-brands fa-youtube"></i>  <button>Youtube   </button></li>
+        <li><i class="fa-regular fa-envelope"></i><button>E-mail    </button></li>
+        <li><i class="fa-solid fa-phone"></i>     <button>Telephone </button></li>
+        <li><i class="fa-brands fa-facebook"></i> <button>Facebook  </button></li>
+        <li><i class="fa-brands fa-twitter"></i>  <button>Twitter   </button></li>
+        <li><i class="fa-brands fa-instagram"></i><button>Instagram </button></li>
+    </ul>
+   
+</div>
+
+
+
+
+</form>
+   <!--! CONTACT FORM STOP  -->
+<!--! FOOTER START  -->
+<div class="footer">
+    <footer>
+      <div class="footer-container">
+        <div class="logo">
+          <a href="home.html"><i class="fa-solid fa-house"></i>RealEstate</a>
+        </div>
+        <div class="footer-links">
+          <form ><i class="fa-solid fa-search"></i><input class="footer-search" type="text" placeholder="Search"></form>
+        </div>
+        <div class="footer-contact">
+          <p>Communication: <div class="social-media-contact"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i></div></p>
+          <p>Email: info@realestate.com</p>
+          <p>Telephone: +90 123 456 7890</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Real Estate Site. All rights reserved  .</p>
+      </div>
+    </footer>
+  </div>
+    <!--! FOOTER STOP  -->
+    <!--! COOKİE START  -->
+    <div class="animate__animated animate__fadeInUp" id="cookie-consent">
+        <p>
+          This website uses cookies to improve your experience. You can review our
+           <a href="#">cookie policy</a> for detailed information.
+        </p>
+        <div class="cookies-button">
+        <button onclick="acceptCookies()">Accept</button>
+        <button onclick="acceptCookies()">Decline</button>
+      </div>
+      </div>
+           <!--! COOKİE STOP  -->
+           <script src="./js/contact.js"></script>
+</body>
+</html>

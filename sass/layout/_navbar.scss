@@ -1,0 +1,89 @@
+//! Navbar design Start
+.navbar {
+  background-color: $navbar-color;
+  color: $secondarytext-color;
+  padding: 15px 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  box-shadow: 5px 10px 18px #3e3e3e;
+  .nav-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      @extend text-logo;
+      text-shadow: 0 0 3px #eaeaea;
+      a {
+        color: $secondarytext-color;
+        display: flex;
+      }
+      i {
+        margin-right: 7px;
+      }
+    }
+    nav ul {
+      display: flex;
+      gap: 18px;
+      .toggle-bar {
+        display: none;
+        cursor: pointer;
+      }
+      li {
+        position: relative;
+      }
+      li a {
+        color: $secondarytext-color;
+        @extend text-md;
+        transition: color 0.3s ease;
+        &:hover {
+          color: $button-color;
+          text-shadow: 0 0 2px $button-color;
+          &::after {
+            width: 100%;
+          }
+        }
+        &.active::after {
+          width: 100%;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 2px;
+          background-color: $secondarytext-color;
+          bottom: -3px;
+          left: 50%;
+          transform: translate(-50%);
+          transition: 0.2s ease-in;
+        }
+      }
+    }
+  }
+}
+//! Navbar design Stop
+//! For Small devices Toggle Navbar design Start
+.toggle-navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  top: 60px;
+  text-align: center;
+  background-color: $navbar-color;
+  display: none;
+  li {
+    border-top: 1px solid #808080;
+    padding: 15px;
+    a {
+      color: $secondarytext-color;
+    }
+  }
+}
+//! For Small devices Toggle Navbar design Stop

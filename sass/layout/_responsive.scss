@@ -1,0 +1,221 @@
+//! For Xsmall devices navbar design
+@mixin xsmallNav {
+  .toggle-navbar {
+    top: 50px;
+  }
+
+  .navbar {
+    height: 50px;
+  }
+  .nav-container {
+    width: 90%;
+  }
+  .logo {
+    font-size: 12px;
+  }
+  nav ul {
+    gap: 10px;
+    li {
+      display: none;
+      font-size: 12px;
+    }
+    .toggle-bar {
+      display: block !important;
+    }
+  }
+}
+//! For small devices navbar design
+@mixin smallNav {
+  .toggle-navbar {
+    top: 55px;
+  }
+
+  .navbar {
+    height: 55px;
+  }
+  .nav-container {
+    width: 90%;
+  }
+  .logo {
+    font-size: 16px;
+  }
+  nav ul {
+    gap: 14px;
+    li {
+      display: none;
+    }
+    .toggle-bar {
+      display: block !important;
+    }
+  }
+}
+//! For small devices slider design
+@mixin smallSlider {
+  .slider .slider-image {
+    .slider-container {
+      gap: 15px;
+      h2 {
+        font-size: 60px;
+        margin-top: 0;
+      }
+      .slider-button {
+        button {
+          width: 175px !important;
+          height: 70px;
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+//! For medium devices slider design
+@mixin mediumSlider {
+  .slider-container {
+    gap: 10px;
+    h2 {
+      font-size: 60px !important;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+  }
+}
+//! For Xsmall devices slider design
+@mixin xsmallSlider {
+  .slider .slider-image {
+    .slider-container {
+      gap: 10px;
+      h2 {
+        font-size: 40px !important;
+        margin-top: 70px;
+      }
+      .slider-button {
+        button {
+          width: 150px !important;
+          height: 30px;
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+//! For small devices footer and cookies design
+@mixin smallFooterAndCookies {
+  footer {
+    padding: 40px 0 132px 0;
+  }
+  .footer-container {
+    gap: 15px;
+    flex-direction: column;
+  }
+  #cookie-consent {
+    height: 120px;
+  }
+}
+//! For Xsmall devices footer  design
+@mixin xsmallFooter {
+  .footer-container {
+    gap: 25px;
+    flex-direction: column;
+  }
+}
+//! For medium devices filter  design
+@mixin mediumfilter {
+  .filter-container {
+    padding: 40px 10px;
+    .filter-button {
+      width: 125px;
+    }
+  }
+}
+//! For small devices filter  design
+@mixin smallfilter {
+  .filter-container {
+    height: 575px;
+    width: 70%;
+    flex-direction: column;
+  }
+}
+//! For Xsmall devices filter  design
+@mixin xsmallfilter {
+  .filter-container {
+    height: 575px;
+    width: 100%;
+    flex-direction: column;
+  }
+}
+//! For small devices contact social media icons  design
+@mixin smallcontactsocialmedia {
+  .contact-social-media {
+    width: 100%;
+    ul {
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+//! For small devices contact form  design
+@mixin smallform {
+  .contact-personal {
+    flex-direction: column;
+    .contact-personal-location {
+      width: 100% !important;
+    }
+    .contact-personal-info {
+      width: 100% !important;
+    }
+  }
+}
+//! For small devices screen left icons design
+@mixin smallLeftScreenİcons{
+  .screen-left-contact{
+    width: 20px;
+  }
+}
+//! For small devices Real Estate İnfo section icons design
+@mixin smallİnfo{
+    .info-section{
+      flex-direction: column;
+      width: 100% !important;
+      img{
+        width: 100%;
+      }
+      span{
+        width: 100% !important;
+      }
+    }
+  }
+
+//! RESPONSİVE DESİGN START
+    
+@media (max-width: 1024px) {
+      @include mediumfilter;
+      @include mediumSlider;
+    }
+@media (max-width: 768px) {
+  @include smallfilter;
+  @include smallFooterAndCookies;
+  @include smallcontactsocialmedia;
+  @include smallform;
+  @include smallLeftScreenİcons;
+  @include smallİnfo;
+}
+@media (max-width: 576px) {
+  header {
+    @include smallNav;
+  }
+  @include xsmallfilter;
+  @include xsmallFooter;
+  @include smallSlider;
+}
+@media (max-width: 380px) {
+  header {
+    @include xsmallNav;
+  }
+  @include xsmallSlider;
+}
+
+//! RESPONSİVE DESİGN STOP

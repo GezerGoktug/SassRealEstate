@@ -1,0 +1,34 @@
+forminput {
+  @include inputFocus;
+  border-radius: 5px;
+  color: $text-color;
+  border: none;
+  &-sm {
+    width: 150px;
+    height: 30px;
+    padding: 5px 5px;
+    @extend text-sm;
+    @extend forminput;
+  }
+  &-md {
+    width: 250px;
+    height: 40px;
+    padding: 5px 5px;
+    @extend text-md;
+    @extend forminput;
+  }
+  &-lg {
+    width: 350px;
+    height: 50px;
+    padding: 5px 5px;
+    @extend text-lg;
+    @extend forminput;
+  }
+  &-xlg {
+    width: 500px;
+    height: 70px;
+    padding: 5px 5px;
+    @extend text-xlg;
+    @extend forminput;
+  }
+}

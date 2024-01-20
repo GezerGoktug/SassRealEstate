@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RealEstate</title>
+    <link rel="icon" href="./image/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" />
+    <!--! Animate Css Library Added  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body class="animate__animated  ">
+      <!--! REGİSTER MODAL START -->
+      <div id="registerModal" class="registermodal ">
+        <div class="registermodal-content animate__animated animate__zoomInUp animate__delay-1s">
+          <span class="close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></span>
+          <h2>Register</h2>
+          <form action="" >
+            <label for="">Name:</label>
+    <input placeholder="Enter your name" required type="text">
+    <label for="">Surname:</label>
+    <input placeholder="Enter your surname" required type="text">
+    <label for="">Age:</label>
+    <input placeholder="Enter your age" required type="number" min="18">
+    <label for="">Birthday:</label>
+    <input placeholder="Enter your birthday" required type="date">
+    <label for="">Email:</label>
+    <input placeholder="Enter your email" required type="email">
+    <label for="">Password:</label>
+    <input placeholder="Enter your password" required type="password">
+            <button type="submit">Kayıt Ol</button>
+          </form>
+        </div>
+      </div>
+       <!--! REGİSTER MODAL STOP -->
+    <!--! RETURN THE TOP BUTTON SECTİON START  -->
+    <div class="returntop"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></div>
+    <!--! RETURN THE TOP BUTTON SECTİON STOP  -->
+    <!--! SCREEN LEFT SOCİAL MEDİA İCONS START -->
+    <div class="screen-left-contact">
+      <div class="contact-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+      <!--! SCREEN LEFT SOCİAL MEDİA İCONS STOP -->
+      <!--! SCREEN RİGHT SOCİAL MEDİA İCONS START -->
+      <div class="screen-right-contact-icon   ">
+        <i class="fa-brands fa-whatsapp"></i><span id="badge" class="badge">1</span>
+      </div>
+      <!--! SCREEN RİGHT SOCİAL MEDİA İCONS STOP -->
+      <header>
+        <!--! NAVBAR START  -->
+        <div class="navbar animate__animated animate__fadeInDownBig">
+          <div class="nav-container">
+            <div class="logo">
+              <a href="home.html"><i  class="fa-solid fa-house"></i>RealEstate</a>
+            </div>
+            <nav>
+              <ul>
+                <li><a class="active" href="home.html">Home</a></li>
+                <li><a href="pricing.html">Pricing Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="toggle-bar"><i onclick="togglebarShow()" class="fa-solid fa-bars"></i></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="toggle-navbar">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="pricing.html">Pricing Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!--! NAVBAR STOP  -->
+        <!--! SLİDER START  -->
+      <div id="top" class="slider">
+        <article class="slider-image">
+          <div class="slider-container">
+            <h2 class="animate__animated animate__backInDown" >Discover Your New Home</h2>
+            <p>
+              Millions of houses for sale. It is now very easy to reach them
+            </p>
+            <div class="slider-button">
+              <button class="animate__animated animate__bounceInLeft"><a href="pricing.html">Browse houses</a></button>
+              <button class="animate__animated animate__bounceInRight"><a href="contact.html">Contact Us</a></button>
+            </div>
+            <div class="slider-icons">
+              <i class="fa-solid fa-circle"></i
+                ><i class="fa-solid fa-circle"></i
+                  ><i class="fa-solid fa-circle"></i>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!--! SLİDER STOP  -->
+        </header>
+        <main>
+          <!--!COMMENTS START  -->
+          <div class="comments">
+            <h2><i class="fa-regular fa-comment"></i> Comments</h2>
+            <div class="comment-card">
+          <div class="card ">
+            <div class="card-header">Nebi Özçelik</div>
+            <div>
+              5.0 <i class="fa-solid fa-star"></i
+                ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <div class="card-title">
+                "It made my home search an amazing experience! It provides professional support at every stage with its comprehensive real estate portfolios, user-friendly interface and responsive customer service. They were a great help to us in finding the perfect home to suit our needs. I would definitely recommend it to everyone!”
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">Ahmet Kutucu</div>
+                <div>
+                  5.0 <i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="card-title">
+                      "RealEstate It was truly a great experience working with the team! They guided us and were with us every step of the way as we managed the process of selling our own home. This team, which impressed us with fast sales, fair pricing and sincere communication, offers a reliable choice in real estate transactions.
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header">Selami Şerif</div>
+                    <div>
+                      5.0 <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                          ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="card-title">"We are grateful for the personalized service they offer at RealEstate.com. They helped us become homeowners by listening to our needs and offering the most suitable real estate options for us. They offer a quality experience with their professionalism and customer-oriented approach."
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header">Mert Ensar</div>
+                        <div>
+                          5.0 <i class="fa-solid fa-star"></i
+                            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="card-title">
+                              "Real Estate is one of the most reliable platforms in the real estate industry! They helped us not only find the perfect home, but also manage our sales process smoothly. The team maximizes customer satisfaction by considering every detail. A great experience!"
+                            </div>
+                          </div>
+        </div>
+        <div class="comments-button">
+          <span class="card-button">Other Comments</span>
+        </div>
+      </div>
+      <!--!COMMENTS STOP  -->
+      <!--! REAL ESTATE INFO START -->
+      <div class="info-container">
+        <div class="info-wrappers">
+          <div class="info-header">
+            <h2>We are the leader in home</h2>
+            <p>Trust us about your home. Our company will list you the best product based on your personal preferences.</p>
+          </div>
+          <div class="info-title">
+            <div class="info-section">
+              <img src="./image/realEstateİnfoİmage/circlestat.png" alt="">
+              <span>With continuous growth, our company is doing everything to provide better services.</span>
+            </div>
+            <div class="info-section">
+              <img src="./image/realEstateİnfoİmage/personal.png" alt="">
+              <span>We strive for better customer satisfaction. We focus on improving the satisfaction rate from the comments provided to us.</span>
+            </div>
+            <div class="info-section">
+              <img src="./image/realEstateİnfoİmage/price.png" alt="">
+              <span>
+                We offer the best priced products to our customers. We focus on offering the best price based on personal preferences.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--! REAL ESTATE INFO STOP -->
+      <!--!HOME PRİCİNG START  -->
+      <div class="home-pricing">
+        <div class="home-pricing-wrappers">
+          <h2>Some Pricing</h2>
+          <div class="pricing-card">
+            <div class="card">
+              <img src="./image/homepricing/4.jpg" class="card-image" />
+              <button class="star-pricing">
+                <i class="fa-solid fa-star"></i>
+              </button>
+              <div class="card-header">Modern City Center Apartment</div>
+              <div class="card-list">
+                <ul>
+                  <li>Location: Located close to the city center</li>
+                  <li>
+                    Features: High-rise building, modern design, large windows,
+                    city view
+                  </li>
+                  <li>
+                    Amenities: Security, parking, gym, proximity to shopping
+                    malls
+                  </li>
+                  <li>Price: Negotiable, contact for details</li>
+                </ul>
+              </div>
+              <div class="card-price">
+                <div class="card-price-cash">750.000 TL</div>
+                <div class="card-price-button">SUBMİT</div>
+              </div>
+            </div>
+            <div class="card">
+              <img  src="./image/homepricing/5.jpg" class="card-image">
+              <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+              
+              <div class="card-header">Villa Intertwined with Nature</div>
+              <div class="card-list"><ul>
+                <li>Location: In a quiet and peaceful area, surrounded by nature</li>
+                <li>Features: Large garden, private swimming pool, terrace, modern interior design</li>
+                <li>Amenities: Garden maintenance, security, private parking</li>
+                <li>Price: Contact for details</li>
+              </ul></div>
+              <div class="card-price">
+                <div class="card-price-cash">1.200.000 TL</div>
+                <div class="card-price-button">SUBMİT</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./image/homepricing/6.jpg" class="card-image">
+              <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+              
+              <div class="card-header">Summer Apartment with Sea View</div>
+              <div class="card-list"><ul>
+                <li>Location: By the beach</li>
+                <li>Features: Balcony with sea view, proximity to the beach, spacious interior design</li>
+                <li>Amenities: Security, shared swimming pool, beach access</li>
+                <li>Price: Contact for details.</li>
+              </ul></div>
+              <div class="card-price">
+                <div class="card-price-cash">900.000 TL</div>
+                <div class="card-price-button">SUBMİT</div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./image/homepricing/7.jpg" class="card-image">
+              <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+              
+              <div class="card-header">Luxury Housing Project Flat</div>
+              <div class="card-list"><ul>
+                <li>Location: In the prestigious district, in the luxury housing projects area</li>
+                <li>Features: High quality materials, exclusive interior design, smart home technologies</li>
+                <li>Amenities: 24/7 security, indoor swimming pool, spa, concierge services</li>
+                <li>Price: Contact for details</li>
+              </ul></div>
+              <div class="card-price">
+                <div class="card-price-cash">2.500.000 TL</div>
+                <div class="card-price-button">SUBMİT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--!HOME PRİCİNG STOP  -->
+    </main>
+    <!--! FOOTER START  -->
+    <div class="footer">
+      <footer>
+        <div class="footer-container">
+          <div class="logo">
+            <a href="home.html"><i class="fa-solid fa-house"></i>RealEstate</a>
+          </div>
+          <div class="footer-links">
+            <form ><i class="fa-solid fa-search"></i><input class="footer-search" type="text" placeholder="Search"></form>
+          </div>
+          <div class="footer-contact">
+            <p>Communication: <div class="social-media-contact"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i></div></p>
+            <p>Email: info@realestate.com</p>
+            <p>Telephone: +90 123 456 7890</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Real Estate Site. All rights reserved  .</p>
+        </div>
+      </footer>
+    </div>
+      <!--! FOOTER STOP  -->
+        <!--! COOKİE START  -->
+    <div class="animate__animated animate__fadeInUp" id="cookie-consent">
+      <p>
+        This website uses cookies to improve your experience. You can review our
+         <a href="#">cookie policy</a> for detailed information.
+      </p>
+      <div class="cookies-button">
+      <button onclick="acceptCookies()">Accept</button>
+      <button onclick="acceptCookies()">Decline</button>
+    </div>
+    </div>
+         <!--! COOKİE STOP  -->
+    <script src="./js/home.js"></script>
+  </body>
+  </html>
+  

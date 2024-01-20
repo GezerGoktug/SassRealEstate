@@ -1,0 +1,148 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../base/reset";
+@import "../base/typography";
+@import "../components/inputs";
+@import "../components/cards";
+@import "../components/cookies";
+@import "../components/buttons";
+@import "../components/slider";
+@import "../components/modal";
+@import "../layout/grid";
+@import "../layout/header";
+@import "../layout/footer";
+@import "../layout/navbar";
+@import "../layout/filters";
+@import "../layout/forms";
+@import "../layout/responsive";
+
+
+
+//! COMMENT CARD SECTİON START
+.comments {
+  padding: 60px 0;
+  width: 80%;
+  margin: 0 auto;
+  .comments-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  h2 {
+    text-shadow: 0 0 3px #1d2023;
+    margin-bottom: 25px;
+    padding: 15px 0;
+    @extend text-xlg;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    text-align: center;
+  }
+  .comment-card {
+    @extend smallGrid;
+    .card {
+      box-shadow: 10px 10px 5px #aaaaaa;
+      padding: 20px;
+      text-align: left;
+      i {
+        color: rgb(114, 114, 19);
+      }
+    }
+  }
+}
+//! COMMENT CARD SECTİON STOP
+//! HOME PRİCİNG SECTİON START
+.home-pricing {
+  background-color: $button-color;
+  color: $navbar-color;
+  .home-pricing-wrappers {
+    padding: 60px 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    color: $secondarytext-color;
+    margin-bottom: 25px;
+    padding: 15px 0;
+    @extend text-xlg;
+    border-bottom: 2px groove rgba(0, 0, 0, 0.432);
+    border-top: 2px groove rgba(0, 0, 0, 0.495);
+    text-align: center;
+  }
+  .pricing-card {
+    @extend smallGrid;
+    
+  }
+}
+//! HOME PRİCİNG SECTİON STOP
+//! REAL ESTATE İNFO START
+.info-container{
+
+  background-image:linear-gradient(rgba(59, 83, 145, 0.3), rgba(81, 93, 181, 0.6)),url('./image/realEstateİnfoİmage/stat.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: $secondarytext-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .info-wrappers{
+    width: 90%;
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    .info-header{
+      text-align: center;
+      border-radius: 25px;
+      background-color: rgba(0, 102, 128, 0.509);
+      padding: 25px;
+      text-shadow: 0 0 3px #e9eaec;
+      h2{
+       font-size: 70px;
+      }
+      p{
+        margin: 25px 0;
+        @extend text-xlg;
+      }
+    }
+    .info-title{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin: 0 auto;
+     align-items: center;
+      .info-section{
+        display: flex;
+        width: 70%;
+        gap: 30px;
+        box-shadow: 0px 4px 30px 4px rgb(21, 93, 165);
+        border-radius: 25px;
+        background-color: rgba(0, 102, 128, 0.509);
+      align-items: center;
+      padding: 25px;
+      img{
+        width: 40%;
+        margin: 0 auto;
+        height: 150px;
+        object-fit: contain;
+        transition: all 0.3s ease-in;
+        &:hover{
+          transform: scale(1.2,1.2);
+          cursor: pointer;
+        }
+      }
+      span{
+        width: 50%;
+        @extend text-md-italic;
+      }
+
+      }
+    }
+  }
+}
+//! REAL ESTATE İNFO STOP

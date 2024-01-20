@@ -1,0 +1,42 @@
+btn {
+  @include buttonHover;
+  border-radius: 3px;
+  background-color: $button-color;
+  color: $secondarytext-color;
+  border: none;
+  transition: 0.2s ease-in;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-media-icon {
+    width: 40px;
+    padding: 10px 5px;
+    @extend btn;
+    @extend text-sm;
+  }
+  &-sm {
+    width: 125px;
+    padding: 10px 5px;
+    @extend btn;
+    @extend text-sm;
+  }
+  &-md {
+    width: 175px;
+    padding: 10px 5px;
+    @extend btn;
+    @extend text-md;
+  }
+  &-lg {
+    width: 225px;
+    padding: 10px 5px;
+    @extend btn;
+    @extend text-lg;
+  }
+  &-xlg {
+    width: 250px;
+    padding: 10px 5px;
+    @extend btn;
+    @extend text-xlg;
+  }
+}

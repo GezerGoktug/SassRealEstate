@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RealEstate-Pricing</title>
+    <link rel="icon" href="./image/favicon/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" />
+       <!--! Animate Css Library Added  -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body>
+    <!--! ADVERTİSİNG MODAL START  -->
+<div class="modal">
+  <div class="modal-wrapper">
+    <i id="modal-close" class="fa-solid fa-xmark"></i>
+    <img src="./image/advertising/realestate.jpg" alt="">
+  </div>
+</div>
+<!--! ADVERTİSİNG MODAL STOP  -->
+        <!--! RETURN THE TOP BUTTON SECTİON START  -->
+        <div class="returntop"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></div>
+        <!--! RETURN THE TOP BUTTON SECTİON STOP  -->
+    <!--! SCREEN LEFT SOCİAL MEDİA İCONS START -->
+    <div class="screen-left-contact">
+      <div class="contact-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-solid fa-envelope"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+    </div>
+    <!--! SCREEN LEFT SOCİAL MEDİA İCONS STOP -->
+    <!--! SCREEN RİGHT SOCİAL MEDİA İCONS START -->
+    <div class="screen-right-contact-icon">
+      <i class="fa-brands fa-whatsapp"></i><span class="badge">1</span>
+    </div>
+    <!--! SCREEN RİGHT SOCİAL MEDİA İCONS STOP -->
+    <header>
+        <!--! NAVBAR START  -->
+    <div class="navbar animate__animated animate__fadeInDownBig">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="home.html"><i class="fa-solid fa-house"></i>RealEstate</a>
+          </div>
+          <nav>
+            <ul>
+              <li><a  href="home.html">Home</a></li>
+              <li><a class="active" href="pricing.html">Pricing Home</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="toggle-bar"><i onclick="togglebarShow()" class="fa-solid fa-bars"></i></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="toggle-navbar">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="pricing.html">Pricing Home</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!--! NAVBAR STOP  -->
+    </header>
+    <!--! PRİCİNG HOMES AND FİLTER SECTİONS START  -->
+    <main id="top">
+        <div class="pricing-container">
+            <div class="realestate-advertising"><a href=""><img src="./image/advertising/realestate.jpg" alt=""> <span class="advertising-badge"><i class="fa-solid fa-xmark"></i>Advertising</span></a></div>
+            <h2 class="pricing-header">Pricing Homes</h2>
+         <div class="pricing-home">
+             <div class="filter-container">
+                 <div class="filter-section">
+                     <label class="filter-label">Kategori:</label>
+                     <div>
+                         <input type="checkbox" class="filter-checkbox" id="kategori-ev" name="kategori" value="ev">
+                         <label for="kategori-ev">Ev</label>
+                     </div>
+                     <div>
+                         <input type="checkbox" class="filter-checkbox" id="kategori-daire" name="kategori" value="daire">
+                         <label for="kategori-daire">Daire</label>
+                     </div>
+                     <div>
+                         <input type="checkbox" class="filter-checkbox" id="kategori-isyeri" name="kategori" value="isyeri">
+                         <label for="kategori-isyeri">İşyeri</label>
+                     </div>
+                 </div>
+             
+                 <div class="filter-section">
+                     <label class="filter-label">Oda Sayısı:</label>
+                     <div>
+                         <input type="checkbox" class="filter-checkbox" id="oda-1" name="oda" value="1">
+                         <label for="oda-1">1+1</label>
+                     </div>
+                     <div>
+                         <input type="checkbox" class="filter-checkbox" id="oda-2" name="oda" value="2">
+                         <label for="oda-2">2+1</label>
+                     </div>
+                     <div>
+                         <input type="checkbox" class="filter-checkbox" id="oda-3" name="oda" value="3">
+                         <label for="oda-3">3+1</label>
+                     </div>
+                 </div>
+             
+                 <div class="filter-section">
+                     <label class="filter-label">Fiyat Aralığı:</label>
+                     <div class="filter-price">
+                         <label for="min-price">Min:</label>
+                         <input type="number" id="min-price" name="min-price" placeholder="Min">
+                     </div>
+                     <div class="filter-price">
+                         <label for="max-price">Max:</label>
+                         <input type="number" id="max-price" name="max-price" placeholder="Max">
+                     </div>
+                 </div>
+             
+                 <div class="filter-location">
+                     <label for="location">Konum:</label>
+                     <input type="text" id="location" name="location" placeholder="Şehir, İlçe, Mahalle">
+                 </div>
+             
+                 <button class="filter-button" onclick="filterResults()">Filtrele</button>
+             </div>
+             <div class="pricing-section">
+                <div class="card">
+                   <img src="./image/homepricing/7.jpg" class="card-image">
+                   <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                    
+                    
+                   
+                   <div class="card-header">Luxury Housing Project Flat</div>
+                    <div class="card-list">
+                        <ul>
+                      <li>Location: In the prestigious district, in the luxury housing projects area</li>
+                      <li>Features: High quality materials, exclusive interior design, smart home technologies</li>
+                      <li>Amenities: 24/7 security, indoor swimming pool, spa, concierge services</li>
+                      <li>Price: Contact for details</li>
+                    </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">2.500.000 TL</div>
+                      <div class="card-price-button">SUBMİT</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/6.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                    <div class="card-header">Summer Apartment with Sea View</div>
+                    <div class="card-list"> <ul>
+                      <li>Location: By the beach</li>
+                      <li>Features: Balcony with sea view, proximity to the beach, spacious interior design</li>
+                      <li>Amenities: Security, shared swimming pool, beach access</li>
+                      <li>Price: Contact for details.</li>
+                    </div>
+                  </ul><div class="card-price">
+                      <div class="card-price-cash">900.000 TL</div>
+                      <div class="card-price-button">SUBMİT</div>
+                    </div>
+                    
+                  </div>
+                  <div class="card">
+                    <img  src="./image/homepricing/5.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                    
+                    <div class="card-header">Villa Intertwined with Nature</div>
+                    <div class="card-list">
+                        <ul> 
+                      <li>Location: In a quiet and peaceful area, surrounded by nature</li>
+                      <li>Features: Large garden, private swimming pool, terrace, modern interior design</li>
+                      <li>Amenities: Garden maintenance, security, private parking</li>
+                      <li>Price: Contact for details</li>
+                    </ul>
+                  </div>
+                  <div class="card-price">
+                    <div class="card-price-cash">1.200.000 TL</div>
+                    <div class="card-price-button">SUBMİT</div>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/4.jpg" class="card-image" />
+                    <button class="star-pricing">
+                      <i class="fa-solid fa-star"></i>
+                    </button>
+                    <div class="card-header">Modern City Center Apartment</div>
+                    <div class="card-list">
+                      <ul>
+                        <li>Location: Located close to the city center</li>
+                        <li>
+                          Features: High-rise building, modern design, large windows,
+                          city view
+                        </li>
+                        <li>
+                          Amenities: Security, parking, gym, proximity to shopping
+                          malls
+                        </li>
+                        <li>Price: Negotiable, contact for details</li>
+                      </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">750.000 TL</div>
+                      <div class="card-price-button">SUBMİT</div>
+                    </div>
+                    
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/8.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                  
+                    <div class="card-header">Modern City Apartment</div>
+                    <div class="card-list">
+                      <ul>
+                        <li>Location: City Center</li>
+                        <li>Features: Contemporary design, panoramic city view, high-end finishes</li>
+                        <li>Amenities: Gym, concierge service, underground parking</li>
+                        <li>Price: $800,000</li>
+                      </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">$800,000</div>
+                      <div class="card-price-button">SUBMIT</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/9.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                  
+                    <div class="card-header">Luxury Beachfront Villa</div>
+                    <div class="card-list">
+                      <ul>
+                        <li>Location: Seaside</li>
+                        <li>Features: Private beach access, spacious terrace, modern amenities</li>
+                        <li>Amenities: Pool, security, landscaped gardens</li>
+                        <li>Price: $1,500,000</li>
+                      </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">$1,500,000</div>
+                      <div class="card-price-button">SUBMIT</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/10.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                  
+                    <div class="card-header">City Center Loft</div>
+                    <div class="card-list">
+                      <ul>
+                        <li>Location: Downtown</li>
+                        <li>Features: Modern design, city view, central location</li>
+                        <li>Amenities: Security, parking, rooftop terrace</li>
+                        <li>Price: Contact for details.</li>
+                      </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">1.200.000 TL</div>
+                      <div class="card-price-button">SUBMIT</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/11.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                  
+                    <div class="card-header">Countryside Villa with Garden</div>
+                    <div class="card-list">
+                      <ul>
+                        <li>Location: Rural area</li>
+                        <li>Features: Spacious garden, tranquility, traditional architecture</li>
+                        <li>Amenities: Privacy, green surroundings, outdoor relaxation areas</li>
+                        <li>Price: Contact for details.</li>
+                      </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">950.000 TL</div>
+                      <div class="card-price-button">SUBMIT</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/12.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                  
+                    <div class="card-header">Mountain Retreat Cabin</div>
+                    <div class="card-list">
+                      <ul>
+                        <li>Location: Mountainous Area</li>
+                        <li>Features: Cozy fireplace, scenic views, natural surroundings</li>
+                        <li>Amenities: Hiking trails, outdoor deck, privacy</li>
+                        <li>Price: $700,000</li>
+                      </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">$700,000</div>
+                      <div class="card-price-button">SUBMIT</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/13.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                  
+                    <div class="card-header">Urban Studio Apartment</div>
+                    <div class="card-list">
+                      <ul>
+                        <li>Location: Urban Area</li>
+                        <li>Features: Efficient layout, modern amenities, city skyline view</li>
+                        <li>Amenities: Fitness center, rooftop garden, concierge</li>
+                        <li>Price: $500,000</li>
+                      </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">$500,000</div>
+                      <div class="card-price-button">SUBMIT</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/14.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                  
+                    <div class="card-header">Family-Friendly Suburban Home</div>
+                    <div class="card-list">
+                      <ul>
+                        <li>Location: Suburb</li>
+                        <li>Features: Spacious backyard, multiple bedrooms, quiet neighborhood</li>
+                        <li>Amenities: Schools nearby, parks, community center</li>
+                        <li>Price: $900,000</li>
+                      </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">$900,000</div>
+                      <div class="card-price-button">SUBMIT</div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <img src="./image/homepricing/15.jpg" class="card-image">
+                    <button class="star-pricing"><i class="fa-solid fa-star"></i></button>
+                  
+                    <div class="card-header">Modern Penthouse with Skyline View</div>
+                    <div class="card-list">
+                      <ul>
+                        <li>Location: City Center</li>
+                        <li>Features: High-rise living, panoramic cityscape, luxury finishes</li>
+                        <li>Amenities: Rooftop pool, concierge, private elevator</li>
+                        <li>Price: $2,000,000</li>
+                      </ul>
+                    </div>
+                    <div class="card-price">
+                      <div class="card-price-cash">$2,000,000</div>
+                      <div class="card-price-button">SUBMIT</div>
+                    </div>
+                  </div>
+             </div>
+
+         </div>
+       
+    </main>
+     <!--! PRİCİNG HOMES AND FİLTER SECTİONS STOP  -->
+ <!--! FOOTER START  -->
+ <div class="footer">
+  <footer>
+    <div class="footer-container">
+      <div class="logo">
+        <a href="home.html"><i class="fa-solid fa-house"></i>RealEstate</a>
+      </div>
+      <div class="footer-links">
+        <form ><i class="fa-solid fa-search"></i><input class="footer-search" type="text" placeholder="Search"></form>
+      </div>
+      <div class="footer-contact">
+        <p>Communication: <div class="social-media-contact"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter"></i></div></p>
+        <p>Email: info@realestate.com</p>
+        <p>Telephone: +90 123 456 7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Real Estate Site. All rights reserved  .</p>
+    </div>
+  </footer>
+</div>
+  <!--! FOOTER STOP  -->
+     <!--! COOKİE START  -->
+     <div class="animate__animated animate__fadeInUp" id="cookie-consent">
+        <p>
+          This website uses cookies to improve your experience. You can review our
+           <a href="#">cookie policy</a> for detailed information.
+        </p>
+        <div class="cookies-button">
+        <button onclick="acceptCookies()">Accept</button>
+        <button onclick="acceptCookies()">Decline</button>
+      </div>
+      </div>
+           <!--! COOKİE STOP  -->
+    <script src="./js/pricing.js"></script>
+  </body>
+</html>
+

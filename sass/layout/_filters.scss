@@ -1,0 +1,47 @@
+.filter-container {
+  width: 100%;
+  margin: 20px auto;
+  height: 175px;
+  padding: 40px;
+  background-color: $secondarytext-color;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  display: flex;
+  justify-content: space-around;
+  .filter-section {
+    margin-bottom: 20px;
+    .filter-label {
+      display: block;
+      font-weight: bold;
+    }
+    .filter-checkbox {
+      margin-right: 5px;
+    }
+    .filter-price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      label {
+        margin-right: 10px;
+      }
+      input {
+        @extend forminput-sm;
+      }
+    }
+  }
+  .filter-location {
+    margin-bottom: 20px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      @extend forminput-sm;
+    }
+  }
+  .filter-button {
+    @extend btn-md;
+    height: 50px;
+  }
+}

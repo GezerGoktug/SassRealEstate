@@ -1,0 +1,35 @@
+text {
+  &-sm {
+    font-size: 14px;
+    &-bold {
+      @extend text-sm;
+      font-weight: 700;
+    }
+    &-italic {
+      @extend text-sm;
+      font-style: italic;
+    }
+  }
+  &-md {
+    font-size: 20px;
+    &-italic {
+      @extend text-md;
+      font-style: italic;
+    }
+  }
+  &-lg {
+    font-size: 26px;
+    &-bold {
+      @extend text-lg;
+      font-weight: 700;
+    }
+  }
+  &-xlg {
+    font-size: 32px;
+  }
+  &-logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: $secondarytext-color;
+  }
+}

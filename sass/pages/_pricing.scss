@@ -1,0 +1,51 @@
+//! Pricing homes section start
+.pricing-container {
+  margin: 0px 8% 50px;
+  padding-top: 100px;
+  .pricing-home {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .pricing-section {
+      @extend bigGrid;
+    }
+  }
+  .pricing-header {
+    @extend text-xlg;
+    text-align: left;
+    padding: 20px 0;
+    border-bottom: 1px groove gray;
+    border-top: 1px groove gray;
+  }
+  .realestate-advertising {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 30px;
+    position: relative;
+    transition: all 1s ease-in;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+    }
+    &:hover .advertising-badge {
+      opacity: 1;
+    }
+    .advertising-badge {
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      background-color: rgb(39, 37, 37);
+      color: $secondarytext-color;
+      padding: 3px;
+      transition: all 0.2s ease-in;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+//! Pricing homes section stop

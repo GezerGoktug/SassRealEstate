@@ -1,0 +1,123 @@
+.contact-form {
+  margin: 0 7%;
+  padding: 50px 0 100px;
+  h2 {
+    margin: 30px 0;
+  }
+  .contact-social-media {
+    ul {
+      @extend smallGrid;
+      li {
+        display: flex;
+        @extend text-md;
+        i {
+          @extend btn-media-icon;
+          border-bottom-right-radius: 0 !important;
+          border-top-right-radius: 0 !important;
+        }
+        &:nth-child(1) i {
+          background-color: rgb(135, 34, 34);
+        }
+        &:nth-child(2) i {
+          background-color: gray;
+        }
+        &:nth-child(3) i {
+          background-color: green;
+        }
+        &:nth-child(4) i {
+          background-color: rgb(26, 26, 109);
+        }
+        &:nth-child(5) i {
+          background-color: rgb(31, 112, 112);
+        }
+        &:nth-child(6) i {
+          background-color: rgb(150, 29, 148);
+        }
+        button {
+          @extend btn-md;
+          border-bottom-left-radius: 0 !important;
+          border-top-left-radius: 0 !important;
+        }
+      }
+    }
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .contact-personal {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      &-info,
+      &-location {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 15px;
+      }
+    }
+    input:not(#contact-radio),
+    select {
+      @extend forminput-md;
+      width: 100% !important  ;
+    }
+    .contact-radio {
+      &-button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 50% !important;
+        height: 50px !important;
+
+        input {
+          width: 50px;
+          height: 100%;
+          transform: scale(0.5, 0.5);
+        }
+      }
+    }
+    button {
+      @extend btn-lg;
+    }
+    textarea {
+      @extend text-md;
+      padding: 6px;
+      border: none;
+      min-width: 100%;
+      max-width: 100%;
+      min-height: 200px;
+      max-height: 500px;
+    }
+  }
+}
+
+.register {
+  margin: 0 7%;
+  padding: 100px 0 0;
+  .register-content {
+    background-color: $back-color;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  h2 {
+    text-align: center;
+    @extend text-lg-bold;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 100% !important;
+    @extend forminput-md;
+    margin-bottom: 16px;
+  }
+
+  button {
+    @extend btn-md;
+  }
+}
