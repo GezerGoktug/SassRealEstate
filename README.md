@@ -100,13 +100,13 @@ https://github.com/GezerGoktug/SassRealEstate/assets/146975286/71352649-f2c7-4a3
 1.**Download the repository**
 
 ```
-git clone https://github.com/GezerGoktug/SassRealEstateProject.git
+git clone https://github.com/GezerGoktug/SassRealEstate.git
 ```
 
 2.**Enter the project directory**
 
 ```
-cd SassRealEstateProject
+cd SassRealEstate
 ```
 
 3.**Install Required Dependencies**
@@ -131,7 +131,7 @@ Go to `http://localhost:3000` in your browser.
 
 ## Contribute 🤝
 
-- You can use the [Issues](https://github.com/GezerGoktug/SassRealEstateProject) tab for bug reports and suggestions.
+- You can use the [Issues](https://github.com/GezerGoktug/SassRealEstate) tab for bug reports and suggestions.
 - If you want to contribute to the project, create a fork and submit a pull request.
 
 
