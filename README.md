@@ -21,6 +21,12 @@
 
   </ul></strong>
 
+# Deploying
+
+**<p>You can access the project live below.</p>**
+
+<a href="https://real-estate-web-site.netlify.app/">https://real-estate-web-site.netlify.app/</a>
+
   
 # What is SASS 7-1 Pattern Design?
 
@@ -32,13 +38,9 @@
   
 
 
-https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/7275f9d1-86ed-4f1b-a72c-f6200f5b2d05
 
+https://github.com/GezerGoktug/SassRealEstate/assets/146975286/b97e17cb-77f8-415a-ac46-4109e44691c7
 
-
-
-
-https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/5f789713-878f-4bd9-b3f1-ca172dea8f84
 
 
 
@@ -53,14 +55,9 @@ https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/5f789713-8
 
 
 
-https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/9fe4558f-f319-4a73-9d88-88241ce4da67
+https://github.com/GezerGoktug/SassRealEstate/assets/146975286/abfccd7c-92f4-489a-b287-7eeee23e498e
 
 
-
-
-
-
-https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/36b4fc25-24fd-4c52-9835-9ffdd60001c1
 
 
 
@@ -72,28 +69,21 @@ https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/36b4fc25-2
 
 
 
-https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/ee70841e-ac0e-4d68-9a43-71d74624d536
 
 
 
 
 
-
-https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/9cc79641-97ad-4f2d-ac64-18e8e5b4ea87
-
-
-
-
+https://github.com/GezerGoktug/SassRealEstate/assets/146975286/71352649-f2c7-4a36-ba4c-194bcd0a31f1
 
 
 
 
 ## Responsive View
-
-<img width="300" src="https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/9a92a25e-8b92-4658-ad0c-6d65915f6ddc"/>
-<img width="300" src="https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/9b71cbc7-b952-4a48-b0b1-e6102d8edc64"/>
-<img width="300" src="https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/90cab790-ade2-4c53-8eba-feb2e1579b4b"/>
-<img width="300" src="https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/ee946b87-4d15-418b-9296-2e5357f93026"/>
+<img width="300" src="https://github.com/GezerGoktug/SassRealEstate/assets/146975286/6f2da836-2631-474d-bc74-4a44f0d859c8">
+<img width="300" src="https://github.com/GezerGoktug/SassRealEstate/assets/146975286/c87ff8b5-b489-4786-bfd1-328901565d01">
+<img width="300" src="https://github.com/GezerGoktug/SassRealEstate/assets/146975286/2b6e75df-e258-469f-9914-b9dba137e434">
+<img width="300" src="https://github.com/GezerGoktug/SassRealEstate/assets/146975286/5ab7a17c-b967-4100-a1c5-fb9555f1475c">
 
 
 <br>
@@ -110,13 +100,13 @@ https://github.com/GezerGoktug/SassRealEstateProject/assets/146975286/9cc79641-9
 1.**Download the repository**
 
 ```
-git clone https://github.com/GezerGoktug/SassRealEstateProject.git
+git clone https://github.com/GezerGoktug/SassRealEstate.git
 ```
 
 2.**Enter the project directory**
 
 ```
-cd SassRealEstateProject
+cd SassRealEstate
 ```
 
 3.**Install Required Dependencies**
@@ -141,7 +131,7 @@ Go to `http://localhost:3000` in your browser.
 
 ## Contribute 🤝
 
-- You can use the [Issues](https://github.com/GezerGoktug/SassRealEstateProject) tab for bug reports and suggestions.
+- You can use the [Issues](https://github.com/GezerGoktug/SassRealEstate) tab for bug reports and suggestions.
 - If you want to contribute to the project, create a fork and submit a pull request.
 
 
